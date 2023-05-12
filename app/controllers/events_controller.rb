@@ -47,6 +47,7 @@ class EventsController < ApplicationController
 
   def edit
     @event = current_user.events.find(params[:id])
+    @only_woman_checkbox = current_user.gender == "woman"
   end
 
   def update
