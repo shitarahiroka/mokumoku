@@ -66,6 +66,6 @@ class EventsController < ApplicationController
   end
 
   def set_only_woman_checkbox
-    @only_woman_checkbox = current_user.gender == "woman"
+    @only_woman_checkbox = current_user.woman?
   end
 end
