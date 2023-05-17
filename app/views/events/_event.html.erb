@@ -19,6 +19,10 @@
           <%= l event.held_at, format: :short %>
         </div>
       </div>
+      <br />
+      <% if event.only_woman? %>
+        <span class="badge bg-info text-dark">女性限定</span>
+      <% end %>
       <hr />
       <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center gap-3">
